@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* reset css */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #fff;
+    color: #181818;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3, 
+h4, 
+h5, 
+h6 {
+    font-weight: 300;
+}
+
+#container{
+    display: flex;
+}
+
+#left{
+    flex:1
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex:1
+}
+
+/* sign in */
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#signin .logo {
+    margin-bottom: 8vh;
+}
+  
+#signin .logo img {
+    width: 300px;
+}
+
+#signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+  
+#signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #555;
+    color: #181818;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}  
+
+#signin .primary-button {
+    width: 100%;
+}
+
+#signin .secondary-button, 
+.or {
+    width: 60%;
+}
+
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+  
+#signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #181818;
+}
+
+#signin .or span {
+    color: #181818;
+    padding: 0 0.8rem;
+}
+
+/* background-showcase */
+#showImage {
+    background: url('img/banknyou_pic.svg') no-repeat center center / cover;
+    height: 100vh;
+}
+
+/* footer */
+#main-footer {
+    color: #a39b9b;
+    text-align: center;
+    font-size: 1rem;
+    max-width: 80%;
+    padding-top: 4rem;
+}
+
+/* button */
+.primary-button {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.primary-button:hover {
+    background-color: #8a86e4;
+}
+
+.secondary-button {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #8a86e4;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: #8a86e4;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+.secondary-button:hover {
+    background-color: #6c63ff;
+    color: #fff;
+}
+  
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    #left {
+      flex: 6;
+    }
+  
+    #right {
+      flex: 4;
+    }
+}
+  
+/* for tablets and mobile */
+@media (max-width: 768px) {
+    body {
+      overflow: auto;
+    }
+  
+    #left {
+      display: none;
+    }
+  
+    #right {
+      justify-content: start;
+      margin-top: 4vh;
+    }
+  
+    #signin .logo {
+      margin-bottom: 2vh;
+    }
+  
+    #signin .text-input {
+      margin-bottom: 0.7rem;
+    }
+  
+    #main-footer {
+      padding-top: 1rem;
+    }
+}
+  
