@@ -3,6 +3,8 @@
 /* reset css */
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -24,6 +26,16 @@ h6 {
 
 #container{
     display: flex;
+}
+
+#test-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right,#afaaff, #f7ccff);
+}
+
+#test-container h1 {
+    text-align: center;
 }
 
 #left{
@@ -78,6 +90,27 @@ h6 {
     padding: 0.5rem 1rem;
     line-height: 1.3rem;
 }  
+
+.input-control {
+    position: relative;
+}
+
+.input-control .error {
+    position: absolute;
+    font-size: 12px;
+    color: #ff3860;
+    bottom: 0;
+    left: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
 
 #signin .primary-button {
     width: 100%;
@@ -201,4 +234,15 @@ h6 {
       padding-top: 1rem;
     }
 }
+
+/* when you rotate your mobile device */
+@media (max-height: 600px) {
+    body{
+        overflow: auto;
+    }
+
+    #right {
+        margin-top: 5%;
+    }
+} 
   

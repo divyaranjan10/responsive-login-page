@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Responsive Login Page</title>
+    <script defer src="validation.js"></script>
 </head>
 <body>
     <div id="container">
@@ -18,15 +19,17 @@
                     <img src="img/logo_banknyou.png" alt="BankNyou">
                 </div>
 
-                <form>
-                    <div>
+                <form id="form">
+                    <div class="input-control">
                         <label>Email</label>
-                        <input type="text" class="text-input">
+                        <input type="text" id="email" class="text-input" data-check-regex="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                        <div class="error"></div>
                     </div>
 
-                    <div>
+                    <div class="input-control">
                         <label>Password</label>
-                        <input type="text" class="text-input">
+                        <input type="text" id="password" class="text-input" data-check-regex="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                        <div class="error"></div>
                     </div>
                     <button type="submit" class="primary-button">Login</button>
                 </form>
