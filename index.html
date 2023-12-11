@@ -7,7 +7,7 @@
     <title>Responsive Login Page</title>
     <script defer src="validation.js"></script>
 </head>
-<body>
+<body id="main-body">
     <div id="container">
         <div id="left">
             <div id="showImage"></div>
@@ -28,7 +28,7 @@
 
                     <div class="input-control">
                         <label>Password</label>
-                        <input type="text" id="password" class="text-input" data-check-regex="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                        <input type="password" id="password" class="text-input" data-check-regex="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                         <div class="error"></div>
                     </div>
                     <button type="submit" class="primary-button">Login</button>
